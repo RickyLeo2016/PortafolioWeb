@@ -13,8 +13,9 @@
     transition: all 0.4s;
     -webkit-transition: all 0.4s;
     padding: 0;
-    background: $white-color;
+    background: $white-color;         
     box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
+    
 
     .navbar-brand{
         font-weight: $font-weight-bold;
@@ -22,6 +23,7 @@
         padding: $navbar-padding-brand;
         font-size: $font-size-base;
         color: $default-color;
+        color: #0893b0;
         text-transform: uppercase;
     }
     .nav-link{
@@ -42,6 +44,8 @@
             font-size: 12px;
             line-height: 1.5em;
             padding: 15px 0;
+            
+            
         }
         p:hover{
             color: #403D39 !important;
@@ -56,7 +60,8 @@
             font-size: $font-size-small;
             text-transform: uppercase;
             font-weight: 600;
-            color: $default-color;
+            color: #0c0c0c;
+            
          }
         .nav-item .nav-link.btn{
             margin: $navbar-margin-a-btn;
@@ -161,7 +166,6 @@
     .navbar-brand{
         color: $white-color;
         @include opacity(.9);
-
         &:focus,
         &:hover{
             background-color: transparent;
@@ -173,6 +177,7 @@
     .navbar-nav{
         .nav-item .nav-link:not(.btn){
             color: $white-color;
+            // color: #ff0000;
             border-color: $white-color;
         }
         .active .nav-link
@@ -181,11 +186,18 @@
         .nav-item .nav-link:hover,
         .nav-item .nav-link:focus{
             background-color: transparent;
-            color: $white-color;
+            // color: $white-color;
+            color: #fff;
+            background-color:#1e9eb8;
+            border: 0px solid rgb(0, 255, 255);
+            border-radius: 5px;
+            box-shadow: 0px 0px 100px rgb(0, 255, 255);
+            transform: scale(0.9);
             @include opacity(1);
         }
         .nav .nav-item a.btn:hover{
             background-color: transparent;
+            background-color:#3eb4cc;
         }
 
         .dropdown .nav-link .caret,
@@ -240,8 +252,9 @@
         .nav-item .nav-link:not(.btn):hover,
         .nav-item .nav-link:not(.btn):focus {
             background-color: transparent;
-            border-radius: 3px;
             color: $info-color;
+            background-color:#e4e70f;
+            border-radius: 40px  5px 20px 5px;
             @include opacity(1);
         }
 
@@ -261,6 +274,7 @@
 
         .navbar-toggle:hover,.navbar-toggle:focus {
             background-color: transparent;
+
         }
 
     }
@@ -334,6 +348,7 @@
     &.navbar-default .navbar-toggle:hover,
     &.navbar-default .navbar-toggle:focus {
         background-color: transparent;
+        
     }
 }
 
@@ -341,6 +356,7 @@
 
 .navbar-light .navbar-nav .nav-link:hover{
     color: $light-gray;
+    color: #e4e70f;
 }
 
 .red{
@@ -355,7 +371,7 @@
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus{
-    color: #5e5e5e;
+    color: #e40505;
 }
 .navbar-collapse.show{
     .navbar-nav{
@@ -386,7 +402,7 @@
 
 .navbar-nav > li > .dropdown-menu,
 .dropdown .dropdown-menu{
-    transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, opacity 0.3s ease 0s, height 0s linear 0.35s;
+    transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, opacity 0.3s ease 0s, height 0s linear 0.35s;   
 }
 
 .navbar-toggler{
@@ -399,7 +415,7 @@
 
     .navbar[class*="bg-"] & .navbar-toggler-bar,
     .navbar.navbar-transparent & .navbar-toggler-bar{
-        background: #fff;
+        background: #3eb4cc;
     }
 
     .navbar-toggler-bar{

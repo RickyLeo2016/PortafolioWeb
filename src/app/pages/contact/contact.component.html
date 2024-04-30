@@ -10,33 +10,37 @@
                     <form class="contact-form">
                         <div class="row">
                             <div class="col-md-6">
-                                <label>Name</label>
-                                <!-- [ngClass]="{'input-group-focus':focus===true}" -->
+                                <label class="labelGeneral">Nombres</label>
                                 <div class="input-group" >
                                     <div class="input-group-prepend">
-                                      <span class="input-group-text"><i class="nc-icon nc-single-02"></i></span>
+                                      <span class="input-group-text">
+                                        <i 
+                                            class="nc-icon nc-single-02" 
+                                            [ngClass]="{'input-group-focus':focus===true}">
+                                        </i>
+                                        </span>
                                     </div>
-                                    <!-- (focus)="focus=true" (blur)="focus=false"  -->
-                                    <input type="text" class="form-control" placeholder="Name" >
+                                    <!--  -->
+                                    <input type="text" class="form-control" placeholder="Nombres" (focus)="focus=true" (blur)="focus=false"  >
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <label>Email</label>
+                                <label class="labelGeneral">Correo</label>
                                 <!-- [ngClass]="{'input-group-focus':focus1===true}" -->
                                 <div class="input-group" >
                                     <div class="input-group-prepend">
                                       <span class="input-group-text">  <i class="nc-icon nc-email-85"></i></span>
                                     </div>
                                     <!-- (focus)="focus1=true" (blur)="focus1=false"  -->
-                                    <input type="text" class="form-control" placeholder="Email" >
+                                    <input type="text" class="form-control" placeholder="Correo" >
                                 </div>
                             </div>
                         </div>
-                        <label>Message</label>
-                        <textarea class="form-control" rows="4" placeholder="Tell us your thoughts and feelings..."></textarea>
+                        <label class="labelGeneral">Mensaje</label>
+                        <textarea class="form-control" rows="5" placeholder="Déjanos un comentario o consulta....."></textarea>
                         <div class="row">
                             <div class="col-md-4 mr-auto ml-auto">
-                                <button class="btn btn-danger btn-lg btn-fill">Send Message</button>
+                                <button class="btn btn-info btn-lg btn-fill">Enviar Mensaje</button>
                             </div>
                         </div>
                     </form>

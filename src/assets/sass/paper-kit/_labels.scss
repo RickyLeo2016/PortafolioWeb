@@ -28,3 +28,15 @@
 .label-default{
     background-color: $default-color;
 }
+
+
+.labelGeneral{
+    padding: 0.2em 0.6em;
+    color: #111010;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 3px;
+    line-height: 17px;
+}
